@@ -26,15 +26,15 @@ CodingWiki_EF/
 ├── CodingWiki_Web            # ASP.NET Core MVC app for CRUD UI
 └── CodingWiki.sln            # Solution file
 
-🛠 Technologies Used
-.NET 7
+## 🛠 Technologies Used
+- .NET 7
 
-Entity Framework Core 7
+- Entity Framework Core 7
 
-ASP.NET Core MVC
+- ASP.NET Core MVC
 
-SQL Server / LocalDB
+- SQL Server / LocalDB
 
-C#
+- C#
 
-LINQ
+- LINQ
