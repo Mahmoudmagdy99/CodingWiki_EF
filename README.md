@@ -1,37 +1,37 @@
-# 📘 CodingWiki_EF
+# CodingWiki_EF 🚀  
+**A learning project focused on mastering Entity Framework Core using layered architecture across multiple app types.**
 
-A structured learning project built to explore and demonstrate the capabilities of **Entity Framework Core** using a multi-project architecture. It includes both a Console App and an ASP.NET Core MVC App sharing a centralized data access layer.
+## 📚 Overview
 
-## 🧠 What You'll Learn
+This solution demonstrates EF Core fundamentals and advanced features through a multi-project setup:
+- **CodingWiki_Console** – Console app showcasing DbContext usage, seeding, and LINQ queries.  
+- **CodingWiki_Web** – ASP.NET Core MVC app with CRUD UI for data exploration.  
+- **CodingWiki_DataAccess** – Contains DbContext, migrations, repository patterns, fluent API & data annotations.  
+- **CodingWiki_Model** – Centralized entity models shared by console and web layers.
 
-- Code-First Migrations
-- Entity Relationships:
-  - One-to-One
-  - One-to-Many
-  - Many-to-Many
-- Data Annotations vs. Fluent API
-- Seeding data into the database
-- LINQ Queries with `Include`, `Select`, `Where`
-- Repository and Unit of Work Patterns
-- DbContext tracking vs. no-tracking
-- Clean project architecture
+## 🧠 Key Concepts & Features
 
-## 🏗️ Solution Structure
+- Code-First EF Core with **migrations** and **database seeding**
+- Modeling relationships: one-to-many, many-to-many, navigation properties
+- Configuration via **Data Annotations** and **Fluent API**
+- Use of **LINQ** (e.g. `Include`, `Select`, `Where`, tracking vs. no-tracking)
+- Clean separation using **Repository and Unit of Work** patterns
+- Demonstrations in both console and web UI environments
+
+## 🛠️ Technologies
+
+- .NET 7 & EF Core 7
+- SQL Server (or LocalDB)
+- ASP.NET Core MVC
+- C#
+- Microsoft.EntityFrameworkCore tooling
+
+## 🏗️ Project Structure
 
 ```plaintext
 CodingWiki_EF/
-├── CodingWiki_Model          # Entity models (POCO classes)
-├── CodingWiki_DataAccess     # DbContext, configurations, migrations, UoW
-├── CodingWiki_Console        # Console app for testing EF features
-├── CodingWiki_Web            # ASP.NET Core MVC app for CRUD UI
-└── CodingWiki.sln            # Solution file
-
-## 🛠 Technologies Used
-
-- [.NET 7](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
-- [Entity Framework Core 7](https://learn.microsoft.com/en-us/ef/core/)
-- [ASP.NET Core MVC](https://learn.microsoft.com/en-us/aspnet/core/mvc/overview)
-- [SQL Server / LocalDB](https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-express-localdb)
-- C#
-- LINQ
-
+├── CodingWiki_Model        # Shared POCO entity classes
+├── CodingWiki_DataAccess   # DbContext, configurations, repositories, migrations
+├── CodingWiki_Console      # Console demo: querying, seeding, relations
+├── CodingWiki_Web          # ASP.NET Core MVC with CRUD UI
+└── CodingWiki.sln
