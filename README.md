@@ -27,14 +27,11 @@ CodingWiki_EF/
 └── CodingWiki.sln            # Solution file
 
 ## 🛠 Technologies Used
-- .NET 7
 
-- Entity Framework Core 7
-
-- ASP.NET Core MVC
-
-- SQL Server / LocalDB
-
+- [.NET 7](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
+- [Entity Framework Core 7](https://learn.microsoft.com/en-us/ef/core/)
+- [ASP.NET Core MVC](https://learn.microsoft.com/en-us/aspnet/core/mvc/overview)
+- [SQL Server / LocalDB](https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-express-localdb)
 - C#
-
 - LINQ
+
